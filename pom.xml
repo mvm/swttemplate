@@ -26,6 +26,23 @@
   </dependencies>
   
   <profiles>
+  	<!-- Import SWT for Windows running in amd64 -->
+  	<profile>
+  		<id>windows_amd64</id>
+  		<activation>
+  			<os>
+  				<family>Windows</family>
+  				<arch>amd64</arch>
+  			</os>
+  		</activation>
+  		<dependencies>
+  			<dependency>
+    			<groupId>org.eclipse.platform</groupId>
+    			<artifactId>org.eclipse.swt.win32.win32.x86_64</artifactId>
+    			<version>3.127.0</version>
+			</dependency>
+  		</dependencies>
+  	</profile>
     <!-- Import SWT for Linux amd64 build -->
   	<profile>
   		<id>linux_amd64</id>
