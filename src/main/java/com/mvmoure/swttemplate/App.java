@@ -19,6 +19,5 @@ public class App
         	if(!display.readAndDispatch()) display.sleep();
         }
         display.dispose();
-        
     }
 }
